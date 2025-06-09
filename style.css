@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: 'VT323', monospace;
+  background-color: #fefbf7;
   color: #111;
   line-height: 1.6;
+  font-size: 20px;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #000, 8px 8px 0 #e3c3a0;
+  border: 2px dashed #000;
 }
 
 header {
@@ -18,14 +24,15 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
+  color: #c20078;
 }
 
 header h2 {
+  color: #0076ce;
   font-weight: normal;
-  color: #666;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0;
 }
 
 .video-wrapper {
@@ -34,6 +41,8 @@ header h2 {
   height: 0;
   overflow: hidden;
   margin-bottom: 2rem;
+  border: 3px solid #333;
+  background: #000;
 }
 
 .video-wrapper iframe {
@@ -46,32 +55,36 @@ header h2 {
 
 .bio {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .bio img {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  border: 2px solid #333;
   object-fit: cover;
+  background: #eaeaea;
 }
 
 .bio p {
   margin: 0;
-  font-size: 1rem;
-  color: #444;
+  color: #333;
 }
 
 footer {
   text-align: center;
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-top: 2px dotted #000;
+  padding-top: 1rem;
 }
 
 footer a {
-  color: #555;
+  color: #c20078;
   text-decoration: none;
 }
 
